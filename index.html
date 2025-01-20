@@ -10,27 +10,28 @@
 </head>
 
 <body>
-  <div class="head">
+  <div id="home" class="head">
     <div class="head__block">
       <header class="header">
         <img src="./assets/icons/logo.svg" alt="logo" class="header__logo">
         <ul class="header__ul">
-          <a href="#">
+          <a href="#home">
             <li>Home</li>
           </a>
-          <a href="#">
+          <a href="#about">
             <li>About</li>
           </a>
-          <a href="#">
+          <a href="#contact">
             <li>Contact</li>
           </a>
         </ul>
         <div class="header__dropdown">
           <button class="button__gamburger"></button>
           <div class="button__dropdown ">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#slider">Gallery</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </header>  
@@ -57,7 +58,7 @@
     </div>
     <img src="./assets/images/house1.jpg" alt="house1" class="head__image">
   </div>
-  <div class="slider">
+  <div id="slider" class="slider">
     <div class="slider__container">
       <img src="./assets/images/house1.jpg" alt="house1" class="slider__image">
       <img src="./assets/images/house2.jpg" alt="house2" class="slider__image">
@@ -99,26 +100,26 @@
     <div class="contact__form">
       <h2>Have any questions?</h2>
       <h3>leave your contact and we will contact you</h3>
-      <input type="text" placeholder="Name" class="contact__input">
-      <input type="email" placeholder="E-mail" class="contact__input">
+      <input type="text" placeholder="Name" class="contact__input" id="contact-name">
+      <input type="email" placeholder="E-mail" class="contact__input" id="contact-email">
       <div>
         <input type="checkbox" id="privacy-policy" name="privacy-policy">
         <label for="privacy-policy">I accept Privacy policy</label>
       </div>
-      <button>Submit form</button>
+      <button id="contact-submit">Submit form</button>
     </div>
     <img src="./assets/images/house4.png" alt="house4" class="contact__image">
   </section>
   <footer class="footer">
     <div class="line white-line"></div>
     <ul class="footer__ul">
-      <a href="#">
+      <a href="#home">
         <li>Home</li>
       </a>
-      <a href="#">
+      <a href="#about">
         <li>About</li>
       </a>
-      <a href="#">
+      <a href="#contact">
         <li>Contact</li>
       </a>
     </ul>
@@ -131,12 +132,24 @@
       </div>
       <div class="footer__item">
         <div class="footer__social">
-          <img src="./assets/icons/inst.svg" alt="instagram" class="footer__social-icon">
-          <img src="./assets/icons/tiktok.svg" alt="tiktok" class="footer__social-icon">
-          <img src="./assets/icons/linked.svg" alt="LinkedIN" class="footer__social-icon">
-          <img src="./assets/icons/facebook.svg" alt="facebook" class="footer__social-icon">
-          <img src="./assets/icons/telegram.svg" alt="telegram" class="footer__social-icon">
-          <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__social-icon">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="./assets/icons/inst.svg" alt="instagram" class="footer__social-icon">
+          </a>
+          <a href="https://www.tiktok.com" target="_blank">
+            <img src="./assets/icons/tiktok.svg" alt="tiktok" class="footer__social-icon">
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="./assets/icons/linked.svg" alt="LinkedIN" class="footer__social-icon">
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="./assets/icons/facebook.svg" alt="facebook" class="footer__social-icon">
+          </a>
+          <a href="https://telegram.org" target="_blank">
+            <img src="./assets/icons/telegram.svg" alt="telegram" class="footer__social-icon">
+          </a>
+          <a href="https://www.youtube.com" target="_blank">
+            <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__social-icon">
+          </a>
         </div>
         <label>Privacy Policy</label>
 
@@ -173,6 +186,18 @@
     });
 
     updateSlider(); 
+    const contactSubmitButton = document.getElementById('contact-submit');
+    contactSubmitButton.addEventListener('click', () => {
+      const name = document.getElementById('contact-name').value;
+      const email = document.getElementById('contact-email').value;
+      const privacyPolicy = document.getElementById('privacy-policy').checked;
+
+      if (name && email && privacyPolicy) {
+        alert(`We will contact you: ${name} and ${email}`);
+      } else {
+        alert('Please fill in all fields and accept the privacy policy.');
+      }
+    });
   });
 </script>
 
