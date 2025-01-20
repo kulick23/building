@@ -3,86 +3,102 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Building</title>
   <link rel="icon" href="./assets/icons/logo.svg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
   <div class="head">
     <div class="head__block">
-  <header class="header">
-    <img src="./assets/icons/logo.svg" alt="logo" class="header__logo">
-    <ul class="header__ul">
-      <a href="#">
-        <li>Home</li>
-      </a>
-      <a href="#">
-        <li>about us</li>
-      </a>
-      <a href="#">
-        <li>contact us</li>
-      </a>
-    </ul>
-  </header>
-    <div class="head__text">
-      <h1>Your Dream Home Awaits</h1>
-      <h2>Discover modern apartments in prime locations, crafted for comfort and style
-      </h2>
-      <div class="head__options">
-        <img src="./assets/icons/option.svg" alt="option" class="head__option">
-        <h3>up to 2000$ per square meter</h3>
+      <header class="header">
+        <img src="./assets/icons/logo.svg" alt="logo" class="header__logo">
+        <ul class="header__ul">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+        </ul>
+        <div class="header__dropdown">
+          <button class="button__gamburger"></button>
+          <div class="button__dropdown ">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </header>  
+      <div class="head__text">
+        <h1>Your Dream Home Awaits</h1>
+        <h2>Discover modern apartments in prime locations, crafted for comfort and style
+        </h2>
+        <div class="head__options">
+          <img src="./assets/icons/option.svg" alt="option" class="head__option">
+          <h3>up to 2000$ per square meter</h3>
+        </div>
+        <div class="head__options">
+          <img src="./assets/icons/option.svg" alt="option" class="head__option">
+          <h3>30% first payment</h3>
+        </div>
+        <div class="head__options">
+          <img src="./assets/icons/option.svg" alt="option" class="head__option">
+          <h3>5% per annum</h3>
+        </div>
+        <div class="head__button">
+          <button>order</button>
+        </div>
       </div>
-      <div class="head__options">
-        <img src="./assets/icons/option.svg" alt="option" class="head__option">
-        <h3>30% first payment</h3>
+    </div>
+    <img src="./assets/images/house1.jpg" alt="house1" class="head__image">
+  </div>
+  <div class="slider">
+    <div class="slider__container">
+      <img src="./assets/images/house1.jpg" alt="house1" class="slider__image">
+      <img src="./assets/images/house2.jpg" alt="house2" class="slider__image">
+      <img src="./assets/images/house3.jpg" alt="house3" class="slider__image">
+    </div>
+    <div class="slider__controls">
+      <button class="slider__button slider__button--prev">‹</button>
+      <button class="slider__button slider__button--next">›</button>
+    </div>
+  </div>
+  <section id="about">
+    <img src="./assets/images/house2.jpg" alt="house2" class="about__image">
+    <div class="about__block">
+      <div class="about__text">
+        <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
+        <p>We create modern, comfortable homes designed for your lifestyle</p>
       </div>
-      <div class="head__options">
-        <img src="./assets/icons/option.svg" alt="option" class="head__option">
-        <h3>5% per annum</h3>
+      <div class="line"></div>
+      <div class="about__text">
+        <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
+        <p>Building vibrant communities that inspire and connect</p>
       </div>
-      <div class="head__button">
+      <div class="line"></div>
+
+      <div class="about__text">
+        <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
+        <p>Quality, trust, and your satisfaction are our priorities</p>
+      </div>
+      <div class="line"></div>
+      <div class="about__text">
+        <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
+        <p>Experience excellence with homes crafted to perfection</p>
+      </div>
       <button>order</button>
     </div>
-  </div>
-  </div>
-    <img src="./assets/images/house1.jpg" alt="house1" class="head__image">
-</div>
-<section id="about">
-  <img src="./assets/images/house2.jpg" alt="house2" class="about__image">
-  <div class="about__block">
-    <div class="about__text">
-      <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
-      <p>We create modern, comfortable homes designed for your lifestyle</p>
-    </div>
-    <div class="line"></div>
-    <div class="about__text">
-      <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
-      <p>Building vibrant communities that inspire and connect</p>
-    </div>
-    <div class="line"></div>
-
-    <div class="about__text">
-      <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
-      <p>Quality, trust, and your satisfaction are our priorities</p>
-    </div>
-    <div class="line"></div>
-    <div class="about__text">
-      <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
-      <p>Experience excellence with homes crafted to perfection</p>
-    </div>
-    <button>order</button>
-  </div>
-  <img src="./assets/images/house3.jpg" alt="house3" class="about__image">
-</section>
-<section id="contact">
-  <div class="contact__form">
-    <h2>Have any questions?</h2>
-    <h3>leave your contact and we will contact you</h3>
+    <img src="./assets/images/house3.jpg" alt="house3" class="about__image">
+  </section>
+  <section id="contact">
+    <div class="contact__form">
+      <h2>Have any questions?</h2>
+      <h3>leave your contact and we will contact you</h3>
       <input type="text" placeholder="Name" class="contact__input">
       <input type="email" placeholder="E-mail" class="contact__input">
       <div>
@@ -90,47 +106,74 @@
         <label for="privacy-policy">I accept Privacy policy</label>
       </div>
       <button>Submit form</button>
-  </div>
-  <img src="./assets/images/house4.png" alt="house4" class="contact__image">
-</section>
-<footer class="footer">
-  <div class="line white-line"></div>
-  <ul class="footer__ul">
-    <a href="#">
-      <li>Home</li>
-    </a>
-    <a href="#">
-      <li>about us</li>
-    </a>
-    <a href="#">
-      <li>contact us</li>
-    </a>
-  </ul>
-  <div class="line white-line"></div>
-
-<div class="footer__block">
-  <div class="footer__item">
-<img src="./assets/icons/logo.svg" alt="logo" class="footer__logo">
-<label>© 2024, Copyright.</label>
-  </div>
-  <div class="footer__item">
-    <div class="footer__social">
-      <img src="./assets/icons/inst.svg" alt="instagram" class="footer__social-icon">
-      <img src="./assets/icons/tiktok.svg" alt="tiktok" class="footer__social-icon">
-      <img src="./assets/icons/linked.svg" alt="LinkedIN" class="footer__social-icon">
-      <img src="./assets/icons/facebook.svg" alt="facebook" class="footer__social-icon">
-      <img src="./assets/icons/telegram.svg" alt="telegram" class="footer__social-icon">
-      <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__social-icon">
     </div>
-    <label>Privacy Policy</label>
+    <img src="./assets/images/house4.png" alt="house4" class="contact__image">
+  </section>
+  <footer class="footer">
+    <div class="line white-line"></div>
+    <ul class="footer__ul">
+      <a href="#">
+        <li>Home</li>
+      </a>
+      <a href="#">
+        <li>About</li>
+      </a>
+      <a href="#">
+        <li>Contact</li>
+      </a>
+    </ul>
+    <div class="line white-line"></div>
 
-  </div>
-  <div class="footer__item">
-    <button>order</button>
-    <label>Terms of Use</label>
-  </div>
-</div>
-</footer>
+    <div class="footer__block">
+      <div class="footer__item">
+        <img src="./assets/icons/logo.svg" alt="logo" class="footer__logo">
+        <label>© 2024, Copyright.</label>
+      </div>
+      <div class="footer__item">
+        <div class="footer__social">
+          <img src="./assets/icons/inst.svg" alt="instagram" class="footer__social-icon">
+          <img src="./assets/icons/tiktok.svg" alt="tiktok" class="footer__social-icon">
+          <img src="./assets/icons/linked.svg" alt="LinkedIN" class="footer__social-icon">
+          <img src="./assets/icons/facebook.svg" alt="facebook" class="footer__social-icon">
+          <img src="./assets/icons/telegram.svg" alt="telegram" class="footer__social-icon">
+          <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__social-icon">
+        </div>
+        <label>Privacy Policy</label>
+
+      </div>
+      <div class="footer__item">
+        <button>order</button>
+        <label>Terms of Use</label>
+      </div>
+    </div>
+  </footer>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sliderContainer = document.querySelector('.slider__container');
+    const slides = document.querySelectorAll('.slider__image');
+    const prevButton = document.querySelector('.slider__button--prev');
+    const nextButton = document.querySelector('.slider__button--next');
+
+    let currentIndex = 0;
+
+    function updateSlider() {
+      const offset = -currentIndex * 100;
+      sliderContainer.style.transform = `translateX(${offset}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+      updateSlider();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+      updateSlider();
+    });
+
+    updateSlider(); 
+  });
+</script>
 
 </html>
