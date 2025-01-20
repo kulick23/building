@@ -160,3 +160,40 @@ h1{
   z-index: 100;
   pointer-events: none; /* Ensure the overlay image does not interfere with interactions */
 }
+
+.footer{
+  background-color: #222222;
+  margin-top: 100px;
+}
+
+.footer__ul{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.footer__block{
+  margin-left: 150px;
+  margin-right: 150px;
+margin-top: 30px;
+padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.footer__item{
+  display: flex;
+  flex-direction: column;
+gap: 10px;
+align-items: center;
+}
+.white-line{
+  background-color: #FFFFFF;
+}
+.footer__logo{
+  height: 30px;
+}
+.footer__social{
+  display: flex;
+  gap: 20px;  
+}
