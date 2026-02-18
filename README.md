@@ -33,7 +33,7 @@ This project showcases a clean promotional website for a residential development
 ## Run Locally
 Because this is a static project, you can run it with any local server.
 
-### Option 1: VS Code Live Server
+### VS Code Live Server
 1. Open the project in VS Code.
 2. Start Live Server from `index.html`.
 3. Open the generated local URL in your browser.
