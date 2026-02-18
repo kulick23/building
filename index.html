@@ -6,179 +6,217 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Building</title>
   <link rel="icon" href="./assets/icons/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
-  <div id="home" class="head">
-    <div class="head__block">
-      <header class="header">
-        <img src="./assets/icons/logo.svg" alt="logo" class="header__logo">
-        <ul class="header__ul">
-          <a href="#home">
-            <li>Home</li>
-          </a>
-          <a href="#about">
-            <li>About</li>
-          </a>
-          <a href="#contact">
-            <li>Contact</li>
-          </a>
-        </ul>
-        <div class="header__dropdown">
-          <button class="button__gamburger"></button>
-          <div class="button__dropdown ">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#slider">Gallery</a>
-            <a href="#contact">Contact</a>
+  <header class="site-header" id="home">
+    <div class="container header__inner">
+      <a href="#home" class="brand" aria-label="Home">
+        <img src="./assets/icons/logo.svg" alt="Building logo" class="brand__logo" />
+        <span>Building</span>
+      </a>
+
+      <nav class="nav" id="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#slider">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <img src="./assets/icons/burger.svg" alt="" />
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Premium Residential Development</p>
+          <h1>Your Dream Home Awaits</h1>
+          <p class="hero__subtitle">Discover modern apartments in prime locations, crafted for comfort, investment growth, and everyday ease.</p>
+
+          <div class="hero__options">
+            <div class="option-item">
+              <img src="./assets/icons/option.svg" alt="Option" />
+              <p>Up to $2,000 per square meter</p>
+            </div>
+            <div class="option-item">
+              <img src="./assets/icons/option.svg" alt="Option" />
+              <p>30% first payment</p>
+            </div>
+            <div class="option-item">
+              <img src="./assets/icons/option.svg" alt="Option" />
+              <p>5% annual rate</p>
+            </div>
+          </div>
+
+          <button class="btn btn--primary">Order a consultation</button>
+        </div>
+
+        <div class="hero__media">
+          <img src="./assets/images/house1.jpg" alt="Modern apartment exterior" />
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats__grid">
+        <article class="stat-card">
+          <h3>12+</h3>
+          <p>Years of development experience</p>
+        </article>
+        <article class="stat-card">
+          <h3>5,000+</h3>
+          <p>Residents in completed projects</p>
+        </article>
+        <article class="stat-card">
+          <h3>98%</h3>
+          <p>Client satisfaction rate</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="slider" class="gallery">
+      <div class="container">
+        <div class="section-head">
+          <p>Showcase</p>
+          <h2>Explore Our Signature Spaces</h2>
+        </div>
+
+        <div class="slider">
+          <div class="slider__container">
+            <img src="./assets/images/house1.jpg" alt="House view 1" class="slider__image" />
+            <img src="./assets/images/house2.jpg" alt="House view 2" class="slider__image" />
+            <img src="./assets/images/house3.jpg" alt="House view 3" class="slider__image" />
+          </div>
+          <div class="slider__controls">
+            <button class="slider__button slider__button--prev" aria-label="Previous slide">&#8249;</button>
+            <button class="slider__button slider__button--next" aria-label="Next slide">&#8250;</button>
           </div>
         </div>
-      </header>  
-      <div class="head__text">
-        <h1>Your Dream Home Awaits</h1>
-        <h2>Discover modern apartments in prime locations, crafted for comfort and style
-        </h2>
-        <div class="head__options">
-          <img src="./assets/icons/option.svg" alt="option" class="head__option">
-          <h3>up to 2000$ per square meter</h3>
-        </div>
-        <div class="head__options">
-          <img src="./assets/icons/option.svg" alt="option" class="head__option">
-          <h3>30% first payment</h3>
-        </div>
-        <div class="head__options">
-          <img src="./assets/icons/option.svg" alt="option" class="head__option">
-          <h3>5% per annum</h3>
-        </div>
-        <div class="head__button">
-          <button>order</button>
-        </div>
       </div>
-    </div>
-    <img src="./assets/images/house1.jpg" alt="house1" class="head__image">
-  </div>
-  <div id="slider" class="slider">
-    <div class="slider__container">
-      <img src="./assets/images/house1.jpg" alt="house1" class="slider__image">
-      <img src="./assets/images/house2.jpg" alt="house2" class="slider__image">
-      <img src="./assets/images/house3.jpg" alt="house3" class="slider__image">
-    </div>
-    <div class="slider__controls">
-      <button class="slider__button slider__button--prev">‹</button>
-      <button class="slider__button slider__button--next">›</button>
-    </div>
-  </div>
-  <section id="about">
-    <img src="./assets/images/house2.jpg" alt="house2" class="about__image">
-    <div class="about__block">
-      <div class="about__text">
-        <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
-        <p>We create modern, comfortable homes designed for your lifestyle</p>
-      </div>
-      <div class="line"></div>
-      <div class="about__text">
-        <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
-        <p>Building vibrant communities that inspire and connect</p>
-      </div>
-      <div class="line"></div>
+    </section>
 
-      <div class="about__text">
-        <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
-        <p>Quality, trust, and your satisfaction are our priorities</p>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-head">
+          <p>About us</p>
+          <h2>We Build Homes With Character</h2>
+        </div>
+
+        <div class="about__grid">
+          <article class="about-card">
+            <img src="./assets/icons/logo.svg" alt="Logo" />
+            <p>We create modern, comfortable homes designed for your lifestyle.</p>
+          </article>
+          <article class="about-card">
+            <img src="./assets/icons/logo.svg" alt="Logo" />
+            <p>Building vibrant communities that inspire and connect.</p>
+          </article>
+          <article class="about-card">
+            <img src="./assets/icons/logo.svg" alt="Logo" />
+            <p>Quality, trust, and your satisfaction remain our top priorities.</p>
+          </article>
+          <article class="about-card">
+            <img src="./assets/icons/logo.svg" alt="Logo" />
+            <p>Experience excellence with homes crafted down to every detail.</p>
+          </article>
+        </div>
+
+        <div class="about__cta">
+          <img src="./assets/images/house2.jpg" alt="Residential building" />
+          <img src="./assets/images/house3.jpg" alt="Modern interior architecture" />
+        </div>
       </div>
-      <div class="line"></div>
-      <div class="about__text">
-        <img src="./assets/icons/logo.svg" alt="logo" class="about__logo">
-        <p>Experience excellence with homes crafted to perfection</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact__card">
+          <div class="contact__form">
+            <p>Get in touch</p>
+            <h2>Have Any Questions?</h2>
+            <h3>Leave your contact details and we will reach you shortly.</h3>
+
+            <input type="text" placeholder="Name" class="contact__input" id="contact-name" />
+            <input type="email" placeholder="E-mail" class="contact__input" id="contact-email" />
+
+            <label class="contact__check" for="privacy-policy">
+              <input type="checkbox" id="privacy-policy" name="privacy-policy" />
+              <span>I accept Privacy Policy</span>
+            </label>
+
+            <button class="btn btn--dark" id="contact-submit">Submit form</button>
+          </div>
+
+          <div class="contact__image-wrap">
+            <img src="./assets/images/house4.png" alt="Contact house" class="contact__image" />
+          </div>
+        </div>
       </div>
-      <button>order</button>
-    </div>
-    <img src="./assets/images/house3.jpg" alt="house3" class="about__image">
-  </section>
-  <section id="contact">
-    <div class="contact__form">
-      <h2>Have any questions?</h2>
-      <h3>leave your contact and we will contact you</h3>
-      <input type="text" placeholder="Name" class="contact__input" id="contact-name">
-      <input type="email" placeholder="E-mail" class="contact__input" id="contact-email">
-      <div>
-        <input type="checkbox" id="privacy-policy" name="privacy-policy">
-        <label for="privacy-policy">I accept Privacy policy</label>
-      </div>
-      <button id="contact-submit">Submit form</button>
-    </div>
-    <img src="./assets/images/house4.png" alt="house4" class="contact__image">
-  </section>
+    </section>
+  </main>
+
   <footer class="footer">
-    <div class="line white-line"></div>
-    <ul class="footer__ul">
-      <a href="#home">
-        <li>Home</li>
-      </a>
-      <a href="#about">
-        <li>About</li>
-      </a>
-      <a href="#contact">
-        <li>Contact</li>
-      </a>
-    </ul>
-    <div class="line white-line"></div>
-
-    <div class="footer__block">
-      <div class="footer__item">
-        <img src="./assets/icons/logo.svg" alt="logo" class="footer__logo">
-        <label>© 2024, Copyright.</label>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="./assets/icons/logo.svg" alt="logo" class="footer__logo" />
+        <span>&copy; 2026, Building. All rights reserved.</span>
       </div>
-      <div class="footer__item">
-        <div class="footer__social">
-          <a href="https://www.instagram.com" target="_blank">
-            <img src="./assets/icons/inst.svg" alt="instagram" class="footer__social-icon">
-          </a>
-          <a href="https://www.tiktok.com" target="_blank">
-            <img src="./assets/icons/tiktok.svg" alt="tiktok" class="footer__social-icon">
-          </a>
-          <a href="https://www.linkedin.com" target="_blank">
-            <img src="./assets/icons/linked.svg" alt="LinkedIN" class="footer__social-icon">
-          </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img src="./assets/icons/facebook.svg" alt="facebook" class="footer__social-icon">
-          </a>
-          <a href="https://telegram.org" target="_blank">
-            <img src="./assets/icons/telegram.svg" alt="telegram" class="footer__social-icon">
-          </a>
-          <a href="https://www.youtube.com" target="_blank">
-            <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__social-icon">
-          </a>
-        </div>
-        <label>Privacy Policy</label>
 
-      </div>
-      <div class="footer__item">
-        <button>order</button>
-        <label>Terms of Use</label>
+      <nav class="footer__nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><img src="./assets/icons/inst.svg" alt="instagram" class="footer__social-icon" /></a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noreferrer"><img src="./assets/icons/tiktok.svg" alt="tiktok" class="footer__social-icon" /></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><img src="./assets/icons/linked.svg" alt="LinkedIN" class="footer__social-icon" /></a>
+        <a href="https://www.facebook.com" target="_blank" rel="noreferrer"><img src="./assets/icons/facebook.svg" alt="facebook" class="footer__social-icon" /></a>
+        <a href="https://telegram.org" target="_blank" rel="noreferrer"><img src="./assets/icons/telegram.svg" alt="telegram" class="footer__social-icon" /></a>
+        <a href="https://www.youtube.com" target="_blank" rel="noreferrer"><img src="./assets/icons/youtube.svg" alt="youtube" class="footer__social-icon" /></a>
       </div>
     </div>
   </footer>
-</body>
-<script>
-   document.addEventListener("DOMContentLoaded", () => {
-      const header = document.querySelector('.header');
 
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-          header.classList.add('scrolled');
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector(".site-header");
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("main-nav");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 20) {
+          header.classList.add("scrolled");
         } else {
-          header.classList.remove('scrolled');
+          header.classList.remove("scrolled");
         }
       });
 
-      // Existing slider and contact form functionality
-      const sliderContainer = document.querySelector('.slider__container');
-      const slides = document.querySelectorAll('.slider__image');
-      const prevButton = document.querySelector('.slider__button--prev');
-      const nextButton = document.querySelector('.slider__button--next');
+      toggle.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", String(isOpen));
+      });
 
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("is-open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      const sliderContainer = document.querySelector(".slider__container");
+      const slides = document.querySelectorAll(".slider__image");
+      const prevButton = document.querySelector(".slider__button--prev");
+      const nextButton = document.querySelector(".slider__button--next");
       let currentIndex = 0;
 
       function updateSlider() {
@@ -186,29 +224,30 @@
         sliderContainer.style.transform = `translateX(${offset}%)`;
       }
 
-      prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+      prevButton.addEventListener("click", () => {
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
         updateSlider();
       });
 
-      nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+      nextButton.addEventListener("click", () => {
+        currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
         updateSlider();
       });
 
-      updateSlider(); 
-      const contactSubmitButton = document.getElementById('contact-submit');
-      contactSubmitButton.addEventListener('click', () => {
-        const name = document.getElementById('contact-name').value;
-        const email = document.getElementById('contact-email').value;
-        const privacyPolicy = document.getElementById('privacy-policy').checked;
+      const contactSubmitButton = document.getElementById("contact-submit");
+      contactSubmitButton.addEventListener("click", () => {
+        const name = document.getElementById("contact-name").value.trim();
+        const email = document.getElementById("contact-email").value.trim();
+        const privacyPolicy = document.getElementById("privacy-policy").checked;
 
         if (name && email && privacyPolicy) {
-          alert(`We will contact you: ${name} and ${email}`);
+          alert(`We will contact you: ${name} (${email})`);
         } else {
-          alert('Please fill in all fields and accept the privacy policy.');
+          alert("Please fill in all fields and accept the privacy policy.");
         }
       });
     });
   </script>
+</body>
+
 </html>
