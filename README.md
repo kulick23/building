@@ -37,27 +37,3 @@ Because this is a static project, you can run it with any local server.
 1. Open the project in VS Code.
 2. Start Live Server from `index.html`.
 3. Open the generated local URL in your browser.
-
-### Option 2: Python HTTP Server
-```bash
-cd /path/to/building
-python3 -m http.server 5500
-```
-Then open: `http://127.0.0.1:5500`
-
-## Deploy to GitHub Pages
-1. Push your repository to GitHub.
-2. Open `Settings` -> `Pages`.
-3. In **Build and deployment**:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-4. Save and wait for deployment.
-
-Your site URL will be:
-`https://<your-username>.github.io/<repository-name>/`
-
-## Notes
-- Main entry point: `index.html`
-- All assets use relative paths, so GitHub Pages works out of the box.
-- If styles do not update after deploy, do a hard refresh in the browser.
